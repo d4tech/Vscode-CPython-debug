@@ -29,8 +29,11 @@
 
 	// Add the IDs of extensions you want installed when the container is created in the array below.
 	"extensions": [
+		//cpp debug plugin
 		"ms-vscode.cpptools",
+		//python debug plugin
 		"ms-python.python",
+		//git blame plugin
 		"waderyan.gitblame"
 	]
 }
