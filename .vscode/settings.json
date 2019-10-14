@@ -1,0 +1,13 @@
+{
+    "python.pythonPath": "${workspaceFolder}/python.exe",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./Lib",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true
+}

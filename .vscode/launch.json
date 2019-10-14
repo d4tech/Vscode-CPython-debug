@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        // Open any Cpython test case in cpython/Lib/test
+        {
+            "name": "gdbDebugTest",
+            "type": "cppdbg",   
+            "request": "launch",
+            "program": "${workspaceFolder}/python.exe",
+            "args": ["-m", "test", "-v", "${file}"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/Lib/test",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // "preLaunchTask": "Build Main"
+        },
+        // run python with -c option
+        {
+            "name": "gdbDebugcmd",
+            "type": "cppdbg",   
+            "request": "launch",
+            "program": "${workspaceFolder}/python.exe",
+            // change the second argument accordinly
+            "args": ["-c", "print(\"hello\")"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // "preLaunchTask": "Build Main"
+        }
+    ]
+}
