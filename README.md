@@ -11,7 +11,7 @@ Vscode configuration for debugging CPython.
 ## Setup:
 1. Clone [Cpython3.6](https://github.com/python/cpython/tree/v3.6.8).
 2. Clone/Download this repo in another location apart from where you cloned Cpython.
-3. Copy and Paste the `.devcontainer` directory into your Cpython directory.
+3. Copy and Paste the `.devcontainer` & `.vscode` directory into your Cpython directory.
 4. Open Cpython in vscode.
 5.  Select **Remote-Containers: Open Folder in Container...** from the command list that appears, and open the root folder of the project you just cloned.
 
