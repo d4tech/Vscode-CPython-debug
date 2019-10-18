@@ -37,3 +37,6 @@ Inside the `.vscode/launch.json` resides the debug configurations, there are thr
 3. `python`
 
     Launches a Python interpreter and from there you can provide a statement for the interpreter to execute and you can follow along.
+
+## Further reading
+Head to [Exploring Cpython](https://devguide.python.org/exploring/), the *Additional References* section has all the exhaustive resources for you to get started with CPython walkthrough! Happy Hacking.
