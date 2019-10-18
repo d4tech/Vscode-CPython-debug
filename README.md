@@ -37,6 +37,3 @@ Inside the `.vscode/launch.json` resides the debug configurations, there are thr
 3. `python`
 
     Launches a Python interpreter and from there you can provide a statement for the interpreter to execute and you can follow along.
-
-## Known Issues:
-* Cannot work with Python3.8 because of linker issues, within Docker.
