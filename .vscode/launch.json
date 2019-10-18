@@ -7,7 +7,7 @@
 
         // Open any Cpython test case in cpython/Lib/test
         {
-            "name": "gdbDebugTest",
+            "name": "Cpython test",
             "type": "cppdbg",   
             "request": "launch",
             "program": "${workspaceFolder}/python.exe",
@@ -28,12 +28,33 @@
         },
         // run python with -c option
         {
-            "name": "gdbDebugcmd",
+            "name": "python -c",
             "type": "cppdbg",   
             "request": "launch",
             "program": "${workspaceFolder}/python.exe",
             // change the second argument accordinly
             "args": ["-c", "print(\"hello\")"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // "preLaunchTask": "Build Main"
+        },
+        {
+            "name": "python interpretter",
+            "type": "cppdbg",   
+            "request": "launch",
+            "program": "${workspaceFolder}/python.exe",
+            // change the second argument accordinly
+            "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
