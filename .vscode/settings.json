@@ -3,7 +3,7 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./Lib",
+        "${workspaceFolder}/Lib/test",
         "-p",
         "test_*.py"
     ],
